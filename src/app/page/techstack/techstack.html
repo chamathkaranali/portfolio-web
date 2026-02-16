@@ -1,1 +1,22 @@
 <p>techstack works!</p>
+<section id="techstack" class="techstack">
+  <div class="container">
+    <div class="section-title">
+      <h2>Tech Stack</h2>
+      <div class="title-underline"></div>
+      <p>Technologies I work with</p>
+    </div>
+
+    <div class="tech-categories">
+      <div class="category" *ngFor="let category of technologies">
+        <h3>{{ category.category }}</h3>
+        <div class="tech-grid">
+          <div class="tech-card" *ngFor="let tech of category.techs">
+            <i [class]="tech.icon" [style.color]="tech.color"></i>
+            <p>{{ tech.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

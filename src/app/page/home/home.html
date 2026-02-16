@@ -1,1 +1,31 @@
-<p>home works!</p>
+<section id="home" class="home">
+  <div class="home-content">
+    <div class="text-content">
+      <p class="greeting">Hello, I'm</p>
+      <h1 class="name">{{ name }}</h1>
+      <h2 class="title">{{ title }}</h2>
+      <p class="description">{{ description }}</p>
+      
+      <div class="cta-buttons">
+        <button class="btn btn-primary" (click)="scrollToContact()">Hire Me</button>
+        <button class="btn btn-secondary">Download CV</button>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/chamathkaranali" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/chamathka-ranali-460a97245/" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="image-content">
+      <div class="profile-image">
+        <div class="circle"></div>
+        <img src="/public/pp.jpeg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
