@@ -1,1 +1,66 @@
 <p>project works!</p>
+<section id="projects" class="projects">
+  <div class="container">
+    <div class="section-title">
+      <h2>My Projects</h2>
+      <div class="title-underline"></div>
+      <p>Some of my recent work</p>
+    </div>
+
+    <div class="filter-buttons">
+      <button 
+        class="filter-btn" 
+        [class.active]="filterCategory === 'all'"
+        (click)="filterProjects('all')">
+        All
+      </button>
+      <button 
+        class="filter-btn" 
+        [class.active]="filterCategory === 'angular'"
+        (click)="filterProjects('angular')">
+        Angular
+      </button>
+      <button 
+        class="filter-btn" 
+        [class.active]="filterCategory === 'react'"
+        (click)="filterProjects('react')">
+        React
+      </button>
+      <button 
+        class="filter-btn" 
+        [class.active]="filterCategory === 'vue'"
+        (click)="filterProjects('vue')">
+        Vue.js
+      </button>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of filteredProjects">
+        <div class="project-image">
+          <img [src]="project.image" [alt]="project.title">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a [href]="project.liveLink" class="project-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <a [href]="project.githubLink" class="project-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-info">
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.description }}</p>
+          
+          <div class="project-tech">
+            <span class="tech-tag" *ngFor="let tech of project.technologies">
+              {{ tech }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

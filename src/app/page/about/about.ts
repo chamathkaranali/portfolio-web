@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './about.html',
   styleUrl: './about.css',
 })
