@@ -10,9 +10,9 @@ import { FormsModule } from '@angular/forms';
 })
 export class Contact {
   contactInfo = {
-    email: 'johndoe@example.com',
-    phone: '+94 77 123 4567',
-    location: 'Colombo, Sri Lanka'
+    email: 'ranalichamathka@gmail.com',
+    phone: '+94 777 964 803',
+    location: 'Nattandiya, Sri Lanka'
   };
 
   formData = {

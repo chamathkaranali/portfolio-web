@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-about',
-  imports: [FormsModule],
+  imports: [FormsModule ,CommonModule],
   templateUrl: './about.html',
   styleUrl: './about.css',
 })
