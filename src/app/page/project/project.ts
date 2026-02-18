@@ -13,7 +13,7 @@ export class Project {
     {
       title: 'E-Commerce Platform',
       description: 'A full-featured online shopping platform with payment integration, user authentication, and admin dashboard.',
-      image: 'assets/project1.jpg',
+      image: '1.jpeg',
       technologies: ['Angular', 'Node.js', 'MongoDB', 'Stripe'],
       liveLink: '#',
       githubLink: '#'
@@ -21,7 +21,7 @@ export class Project {
     {
       title: 'Task Management App',
       description: 'Real-time task management application with team collaboration features and productivity analytics.',
-      image: 'assets/project2.jpg',
+      image: '2.jpeg',
       technologies: ['React', 'Firebase', 'Material-UI'],
       liveLink: '#',
       githubLink: '#'
@@ -29,7 +29,7 @@ export class Project {
     {
       title: 'Social Media Dashboard',
       description: 'Analytics dashboard for social media metrics with data visualization and reporting tools.',
-      image: 'assets/project3.jpg',
+      image: '3.jpeg',
       technologies: ['Vue.js', 'Express', 'PostgreSQL', 'Chart.js'],
       liveLink: '#',
       githubLink: '#'
@@ -37,7 +37,7 @@ export class Project {
     {
       title: 'Weather Forecast App',
       description: 'Real-time weather application with location-based forecasts and interactive maps.',
-      image: 'assets/project4.jpg',
+      image: '4.jpeg',
       technologies: ['JavaScript', 'API Integration', 'CSS3'],
       liveLink: '#',
       githubLink: '#'
@@ -45,7 +45,7 @@ export class Project {
     {
       title: 'Blog Platform',
       description: 'Full-stack blogging platform with rich text editor, comments, and user profiles.',
-      image: 'assets/project5.jpg',
+      image: '5.jpeg',
       technologies: ['Angular', 'Django', 'MySQL'],
       liveLink: '#',
       githubLink: '#'
@@ -53,7 +53,7 @@ export class Project {
     {
       title: 'Portfolio Website',
       description: 'Responsive portfolio website with modern design and smooth animations.',
-      image: 'assets/project6.jpg',
+      image: '6.jpeg',
       technologies: ['HTML5', 'CSS3', 'JavaScript'],
       liveLink: '#',
       githubLink: '#'
