@@ -53,7 +53,7 @@ export class Project {
     {
       title: 'Portfolio Website',
       description: 'Responsive portfolio website with modern design and smooth animations.',
-      image: '6.jpeg',
+      image: '6.jpg',
       technologies: ['HTML5', 'CSS3', 'JavaScript'],
       liveLink: '#',
       githubLink: '#'
