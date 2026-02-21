@@ -1,0 +1,107 @@
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Get In Touch</h2>
+      <div class="title-underline"></div>
+      <p>Feel free to contact me anytime</p>
+    </div>
+
+    <div class="contact-content">
+      <div class="contact-info">
+        <h3>Let's work together!</h3>
+        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+
+        <div class="info-items">
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-text">
+              <h4>Email</h4>
+              <p>{{ contactInfo.email }}</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="info-text">
+              <h4>Phone</h4>
+              <p>{{ contactInfo.phone }}</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info-text">
+              <h4>Location</h4>
+              <p>{{ contactInfo.location }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/chamathkaranali" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/chamathka-ranali-460a97245/" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <input 
+              type="text" 
+              [(ngModel)]="formData.name" 
+              name="name"
+              placeholder="Your Name" 
+              required>
+          </div>
+
+          <div class="form-group">
+            <input 
+              type="email" 
+              [(ngModel)]="formData.email" 
+              name="email"
+              placeholder="Your Email" 
+              required>
+          </div>
+
+          <div class="form-group">
+            <input 
+              type="text" 
+              [(ngModel)]="formData.subject" 
+              name="subject"
+              placeholder="Subject" 
+              required>
+          </div>
+
+          <div class="form-group">
+            <textarea 
+              [(ngModel)]="formData.message" 
+              name="message"
+              placeholder="Your Message" 
+              rows="6" 
+              required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            Send Message
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    <p>Made with <i class="fas fa-heart"></i> by ranali❤️</p>
+  </footer>
+</section>

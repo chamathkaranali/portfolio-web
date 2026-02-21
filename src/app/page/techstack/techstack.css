@@ -1,0 +1,128 @@
+.techstack {
+  padding: 100px 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title h2 {
+  font-size: 3rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.section-title p {
+  font-size: 1.2rem;
+  color: #4a5568;
+  margin-top: 1rem;
+}
+
+.title-underline {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.tech-categories {
+  display: grid;
+  gap: 3rem;
+}
+
+.category h3 {
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.category h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+}
+
+.tech-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.tech-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.tech-card i {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.tech-card:hover i {
+  transform: scale(1.2);
+}
+
+.tech-card p {
+  font-size: 1.1rem;
+  color: #2d3748;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .category h3 {
+    font-size: 1.5rem;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+
+  .tech-card {
+    padding: 1.5rem;
+  }
+
+  .tech-card i {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
